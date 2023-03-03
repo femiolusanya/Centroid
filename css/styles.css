@@ -578,7 +578,8 @@ a {
 .block-domain .inputgroup{
     box-shadow: 0 0 30px 20px #e6ebee;
     border: 0;
-    margin: 4rem 0;
+    margin: 4rem auto;
+    max-width: 670px;
 }
 .block-domain__prices {
     display: grid;
@@ -587,9 +588,11 @@ a {
     font-size: 2rem;
     font-weight: 600;
     justify-items: center;
+    max-width: 700px;
+    margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
     .block-domain__prices {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
 }
